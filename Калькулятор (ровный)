@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            string action;
+            Console.WriteLine("В данной программе вы сможете посчитать любую операцию с двумя числами");
+
+            Console.WriteLine("Введите первое число");
+            double a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Введите второе число");
+            double b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Выберите операцию : '+' '-' '*' '/' " );
+            action = Console.ReadLine();
+
+            switch (action)
+            {
+                case "+":
+                    Console.WriteLine(a + b);
+                break;
+                    case "-":
+                    Console.WriteLine(a - b);
+                    break;
+                case "*":
+                    Console.WriteLine(a * b);
+                    break;
+                case "/":
+                    Console.WriteLine(a / b);
+                    break;
+
+                default:
+                    Console.WriteLine("Ошибка");
+                    break;
+            }
+
+              
+          
+        }
+    }
+}
