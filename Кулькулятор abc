@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Данный калькулятор может выполнять действия с двумя числами");
+            Console.WriteLine("Введите первое число");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите второе число");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите третье число");
+            double c = double.Parse(Console.ReadLine());    
+
+            Console.WriteLine("Выберите действие + - / *");
+            string abc;
+            abc = Console.ReadLine();
+
+            switch (abc)
+            {
+                case "+":
+                    Console.WriteLine(a + b + c);
+                    break;
+                case "-":
+                    Console.WriteLine(a - b - c);
+                    break;
+                case "/":
+                    Console.WriteLine(a / b / c);
+                    break;
+                case "*":
+                    Console.WriteLine(a * b * c);
+                    break;
+                default:
+                    Console.WriteLine("Ошибка");
+                    break;
+            
+
+
+
+
+
+
+
+            }
+
+
+
+        }
+    }
+}
